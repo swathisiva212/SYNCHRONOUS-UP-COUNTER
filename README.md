@@ -35,31 +35,30 @@ However, the remaining flip-flops should be made ready to toggle only when all l
 /* Program for flipflops and verify its truth table in quartus using Verilog programming. 
 
 Developed by:swathi.s RegisterNumber:212223040219
-*/
 ```
-module EXP10(clk, sin, q);
-input clk;
-input sin;
-output [3:0] q;
-reg [3:0] q;
-always @(posedge clk)
+module ex11(out,clk,rstn);
+input clk,rstn;
+output reg [3:0]out;
+always @ (posedge clk)
 begin
-q[0] <= sin;
-q[1] <= q[0];
-q[2] <= q[1];
-q[3] <= q[2];
+   if(!rstn)
+     out<=0;
+   else 
+     out <= out+1;
 end
 endmodule
 ```
 
 **RTL LOGIC UP COUNTER**
-![image](https://github.com/swathisiva212/SYNCHRONOUS-UP-COUNTER/assets/155249892/2cf9c6c8-5efa-4c1f-91df-2dfcf3c4b508)
+
+![image](https://github.com/swathisiva212/SYNCHRONOUS-UP-COUNTER/assets/155249892/83c38e2a-1345-41b0-8724-0114e1411390)
+
 
 **TIMING DIAGRAM FOR IP COUNTER**
-![image](https://github.com/swathisiva212/SYNCHRONOUS-UP-COUNTER/assets/155249892/8b5ddcd3-cda4-4585-aa70-349d347abd0e)
+![image](https://github.com/swathisiva212/SYNCHRONOUS-UP-COUNTER/assets/155249892/8b511fbc-8660-41bd-aaff-40b6d1ddc102)
 
 **TRUTH TABLE**
 ![image](https://github.com/swathisiva212/SYNCHRONOUS-UP-COUNTER/assets/155249892/d45fdb80-fef6-4a66-bf22-b7ecaf8c9a32)
 
 **RESULTS**
-hence 4 bit synchronous- up- counter implemented successfully.
+Hence 4 bit synchronous- up- counter implemented successfully.
