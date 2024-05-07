@@ -59,5 +59,7 @@ endmodule
 ![image](https://github.com/swathisiva212/SYNCHRONOUS-UP-COUNTER/assets/155249892/8b5ddcd3-cda4-4585-aa70-349d347abd0e)
 
 **TRUTH TABLE**
+![image](https://github.com/swathisiva212/SYNCHRONOUS-UP-COUNTER/assets/155249892/d45fdb80-fef6-4a66-bf22-b7ecaf8c9a32)
 
 **RESULTS**
+hence 4 bit synchronous- up- counter implemented successfully.
